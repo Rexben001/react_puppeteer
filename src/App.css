@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: arial, tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  direction: ltr;
+  background: white;
+}
+
+.main {
+  margin: 10% auto 0 auto;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
+}
+form {
+  margin: 10% auto 0 auto;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  background: white;
+  border-radius: 10px;
+}
+
+form label {
+  font-size: 1.2rem;
+  color: darkgray;
+  cursor: pointer;
+}
+
+form label,
+form input {
+  float: left;
+  clear: both;
+}
+
+form input {
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+form input[type='text']:focus,
+form input[type='password']:focus {
+  border-color: cornflowerblue;
+}
+
+input[type='submit'] {
+  padding: 15px 50px;
+  width: auto;
+  background: #1abc9c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  clear: right;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+input[type='submit']:hover {
+  opacity: 0.8;
+}
+
+input[type='submit']:active {
+  opacity: 0.4;
+}
+
+.forgot,
+.register {
+  margin: 10px;
+  float: left;
+  clear: left;
+  display: inline-block;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.forgot:hover,
+.register:hover {
+  color: darkgray;
+}
+
+#logo {
+  margin: 0 auto;
+  width: 200px;
+  font-family: 'Lily Script One', cursive;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgray;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+#logo:hover {
+  color: cornflowerblue;
+}
+
+@media screen and (max-width: 550px) {
+  form {
+    width: 70%;
+  }
+}
+
+.copy,
+a {
+  margin-top: 15vh;
+  text-align: center;
+  color: grey;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
+@keyframes floating {
+  from {
+    transform: translateY(0px);
+  }
+
+  65% {
+    transform: translateY(15px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.home {
+  margin: 10% auto 0 auto;
+  text-align: center;
+}
+.home p {
+  color: #1abc9c;
+  font-size: 3rem;
+}
+
+.home p:hover {
+  color: brown;
+}
+
+.error {
+  font-size: 12px;
+  color: red;
+  display: block;
+  clear: both;
+  margin-bottom: -10px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #1abc9c; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-top: 30%;
+  margin-left: 30%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
